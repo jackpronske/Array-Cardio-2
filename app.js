@@ -34,4 +34,9 @@ const found = comments.find((comment) => {
 
 // Array.prototype.findIndex()
 // Find the comment with this ID
+const foundIndex = comments.findIndex((comment) => {
+  return comment.id === 823423;
+});
+
 // delete the comment with the ID of 823423
+comments.splice(foundIndex, 1);
